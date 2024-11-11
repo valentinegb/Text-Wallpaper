@@ -163,7 +163,7 @@ struct ContentView: View {
             .fileExporter(
                 isPresented: $fileExporterIsPresented,
                 item: image,
-                defaultFilename: "Glyph Wallpaper.png"
+                defaultFilename: "Text Wallpaper.png"
             ) { result in
                 if case .failure(let error) = result {
                     fileExporterErrorDescription = error.localizedDescription
