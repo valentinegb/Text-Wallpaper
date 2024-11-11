@@ -33,7 +33,11 @@ struct ContentView: View {
         let text = if case .custom = textPreset {
             customText
         } else if case .repeating = textPreset {
-            Array(repeating: customText, count: 4000 / customText.count).joined(separator: " ")
+            if customText.count > 0 {
+                Array(repeating: customText, count: 4000 / customText.count).joined(separator: " ")
+            } else {
+                ""
+            }
         } else {
             textPreset.rawValue
         }
