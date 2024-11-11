@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-class Glyph_Wallpaper_GeneratorAppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
+class Text_WallpaperAppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         true
     }
 }
 
 @main
-struct Glyph_Wallpaper_GeneratorApp: App {
-    @NSApplicationDelegateAdaptor private var appDelegate: Glyph_Wallpaper_GeneratorAppDelegate
+struct Text_WallpaperApp: App {
+    @NSApplicationDelegateAdaptor private var appDelegate: Text_WallpaperAppDelegate
 
     var body: some Scene {
         WindowGroup {
