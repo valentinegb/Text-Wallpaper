@@ -20,6 +20,8 @@ struct Text_WallpaperApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .frame(minWidth: 400, minHeight: 423)
         }
+        .defaultSize(width: 531, height: 524)
     }
 }

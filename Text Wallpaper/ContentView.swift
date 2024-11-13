@@ -16,11 +16,11 @@ struct ContentView: View {
         case custom
     }
     
-    @State private var textPreset: TextPreset = .repeating
+    @State private var textPreset: TextPreset = .loremIpsum
     @State private var customText: String = "Edit me!"
     @State private var font: String = "SFPro-Black"
     @State private var degrees: Double = 350
-    @State private var colors: [Color] = [.black]
+    @State private var colors: [Color] = [.yellow, .purple, .blue]
     @State private var inverted: Bool = false
     
     @State private var fileExporterIsPresented: Bool = false
@@ -180,7 +180,6 @@ struct ContentView: View {
             .dialogSeverity(.critical)
         }
         .padding()
-        .frame(minWidth: 400, idealWidth: 531, minHeight: 423)
     }
 }
 
